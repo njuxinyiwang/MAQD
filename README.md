@@ -14,8 +14,15 @@ This is the source code of MAQD model.
 * scipy (tested on 1.5.2)
 * redis
 
+## Data
+### Raw data
+For data preparation and processing steps, please follow the instructions provided in the [CodRED repository](https://github.com/thunlp/CodRED/tree/master).
+
+### Augmented query sentences from LLMs
+Put the generated relation answers, paths and summaries into the `./data/answer`, `./data/path`  and `./data/summary`. 
+
 ## Run
-### Data preprocessing
+### Sentence reranking
 Save the splited sentences and their corresponding reranking scores with the following command:
 
 ```bash
